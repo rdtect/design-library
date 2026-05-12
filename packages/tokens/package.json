@@ -1,0 +1,24 @@
+{
+  "name": "@rdtect/tokens",
+  "version": "0.1.0",
+  "description": "rdtect design tokens — CSS custom properties",
+  "type": "module",
+  "main": "src/index.css",
+  "exports": {
+    ".": "./src/index.css",
+    "./colors": "./src/colors.css",
+    "./elevation": "./src/elevation.css",
+    "./blur": "./src/blur.css",
+    "./motion": "./src/motion.css",
+    "./typography": "./src/typography.css",
+    "./spacing": "./src/spacing.css",
+    "./radius": "./src/radius.css",
+    "./z-index": "./src/z-index.css"
+  },
+  "files": ["src/"],
+  "keywords": ["design-tokens", "css-variables", "rdtect"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

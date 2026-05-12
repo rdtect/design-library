@@ -1,0 +1,10 @@
+/* @rdtect/tokens — blur
+ * blur-as-explicit-token: named blur scale
+ */
+
+:root {
+  --blur-light:    4px;
+  --blur-standard: 12px;
+  --blur-heavy:    24px;
+  --blur-extreme:  40px;
+}

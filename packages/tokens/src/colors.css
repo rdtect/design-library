@@ -1,0 +1,43 @@
+/* @rdtect/tokens — colors
+ * surface-altitude-naming + gold-mono-accent patterns
+ * Hue: gold (TBD designer — copper/amber acceptable)
+ */
+
+:root {
+  /* Surface altitude (dark-first, geophysical naming) */
+  --surface-ground:   #030712;
+  --surface-bedrock:  #0a0f1a;
+  --surface-terrain:  #111827;
+  --surface-ridge:    #1e293b;
+  --surface-peak:     #334155;
+
+  /* Text */
+  --text-primary:     #f8fafc;
+  --text-secondary:   #94a3b8;
+  --text-muted:       #475569;
+  --text-inverse:     #0f172a;
+
+  /* Gold accent (TBD: final hue from designer) */
+  --accent:           #d4af37;
+  --accent-light:     #f4d461;
+  --accent-dark:      #aa8c2c;
+  --accent-glow:      rgba(212, 175, 55, 0.15);
+  --accent-shimmer:   rgba(212, 175, 55, 0.08);
+
+  /* semantic-stage-color-triplet pattern */
+  --status-success:       #22c55e;
+  --status-success-bg:    rgba(34, 197, 94, 0.08);
+  --status-success-glow:  rgba(34, 197, 94, 0.20);
+
+  --status-warning:       #f59e0b;
+  --status-warning-bg:    rgba(245, 158, 11, 0.08);
+  --status-warning-glow:  rgba(245, 158, 11, 0.20);
+
+  --status-error:         #ef4444;
+  --status-error-bg:      rgba(239, 68, 68, 0.08);
+  --status-error-glow:    rgba(239, 68, 68, 0.20);
+
+  --status-info:          #3b82f6;
+  --status-info-bg:       rgba(59, 130, 246, 0.08);
+  --status-info-glow:     rgba(59, 130, 246, 0.20);
+}

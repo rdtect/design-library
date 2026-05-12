@@ -1,0 +1,14 @@
+/* @rdtect/tokens — elevation
+ * neumorphic-elevation-grammar: four-tier shadow system
+ * Encodes interaction state as tactile depth
+ */
+
+:root {
+  --shadow-flat:     none;
+  --shadow-pressed:  inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -1px -1px 3px rgba(255, 255, 255, 0.04);
+  --shadow-floating: 4px 4px 12px rgba(0, 0, 0, 0.5), -2px -2px 8px rgba(255, 255, 255, 0.04);
+  --shadow-elevated: 8px 8px 24px rgba(0, 0, 0, 0.6), -4px -4px 12px rgba(255, 255, 255, 0.05);
+
+  /* Accent glow variant (premium CTAs, selected states) */
+  --shadow-accent-glow: 0 0 20px var(--accent-glow), 4px 4px 12px rgba(0, 0, 0, 0.5);
+}

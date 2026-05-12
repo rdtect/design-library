@@ -1,0 +1,10 @@
+/* @rdtect/tokens — barrel import */
+
+@import './colors.css';
+@import './elevation.css';
+@import './blur.css';
+@import './motion.css';
+@import './typography.css';
+@import './spacing.css';
+@import './radius.css';
+@import './z-index.css';

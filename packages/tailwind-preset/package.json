@@ -1,0 +1,32 @@
+{
+  "name": "@rdtect/tailwind-preset",
+  "version": "0.1.0",
+  "description": "rdtect Tailwind v4 preset — bridges CSS var tokens to Tailwind classes",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist/"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "@rdtect/tokens": "workspace:*",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["tailwind", "preset", "design-tokens", "rdtect"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

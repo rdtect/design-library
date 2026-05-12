@@ -21,6 +21,14 @@
     'bg-surface-peak'
   ]
 
+  const altitudeSurfaceGlass = [
+    'bg-surface-ground/60',
+    'bg-surface-bedrock/60',
+    'bg-surface-terrain/60',
+    'bg-surface-ridge/60',
+    'bg-surface-peak/60'
+  ]
+
   const altitudeShadow = [
     'shadow-flat',
     'shadow-flat',
@@ -29,15 +37,14 @@
     'shadow-elevated'
   ]
 
-  const glassMod = glass
-    ? 'backdrop-blur-[var(--blur-standard)] bg-opacity-60'
-    : ''
+  const bgClass = $derived(glass ? altitudeSurfaceGlass[altitude] : altitudeSurface[altitude])
+  const glassMod = $derived(glass ? 'backdrop-blur-[var(--blur-standard)]' : '')
 </script>
 
 <div
   class="
     rounded-2xl border border-surface-peak/20 p-6
-    {altitudeSurface[altitude]}
+    {bgClass}
     {altitudeShadow[altitude]}
     {glassMod}
     {extraClass}

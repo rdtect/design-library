@@ -11,6 +11,8 @@
 
 <!-- grayscale-to-color-reveal: media starts desaturated, colorizes on hover -->
 <div
+  role="img"
+  aria-label={alt}
   class="relative overflow-hidden rounded-lg {extraClass}"
   onmouseenter={() => (hovered = true)}
   onmouseleave={() => (hovered = false)}

@@ -16,13 +16,16 @@
     error,
     oninput
   }: Props = $props()
+
+  const inputId = $derived(label ? `input-${label.toLowerCase().replace(/\s+/g, '-')}` : undefined)
 </script>
 
 <div class="flex flex-col gap-1.5">
   {#if label}
-    <label class="text-sm font-medium text-text-secondary">{label}</label>
+    <label for={inputId} class="text-sm font-medium text-text-secondary">{label}</label>
   {/if}
   <input
+    id={inputId}
     bind:value
     {placeholder}
     {disabled}

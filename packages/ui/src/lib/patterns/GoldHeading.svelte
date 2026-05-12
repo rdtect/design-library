@@ -13,13 +13,13 @@
     children
   }: Props = $props()
 
-  const baseClass = `
-    font-display font-bold tracking-tight
-    bg-gradient-to-r from-accent via-accent-light to-accent
-    bg-clip-text text-transparent
-    ${shimmer ? 'animate-shimmer' : ''}
-    ${extraClass}
-  `
+  const baseClass = $derived(
+    `font-display font-bold tracking-tight
+     bg-gradient-to-r from-accent via-accent-light to-accent
+     bg-clip-text text-transparent
+     ${shimmer ? 'rdtect-shimmer' : ''}
+     ${extraClass}`
+  )
 </script>
 
 {#if level === 1}
@@ -29,3 +29,14 @@
 {:else}
   <h3 class="text-xl leading-snug {baseClass}">{@render children?.()}</h3>
 {/if}
+
+<style>
+  :global(.rdtect-shimmer) {
+    background-size: 200% auto;
+    animation: rdtect-shimmer 2.5s linear infinite;
+  }
+
+  @keyframes rdtect-shimmer {
+    to { background-position: 200% center; }
+  }
+</style>

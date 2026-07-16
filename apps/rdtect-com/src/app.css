@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Design tokens — CSS custom properties */
+@import "@rdtect/tokens";
+
+/* Google Fonts — display + body pairing */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Tailwind v4 theme — map token CSS vars to Tailwind utilities */
+@theme inline {
+  /* Surface altitude colors */
+  --color-surface-ground:  var(--surface-ground);
+  --color-surface-bedrock: var(--surface-bedrock);
+  --color-surface-terrain: var(--surface-terrain);
+  --color-surface-ridge:   var(--surface-ridge);
+  --color-surface-peak:    var(--surface-peak);
+
+  /* Accent */
+  --color-accent:           var(--accent);
+  --color-accent-light:     var(--accent-light);
+  --color-accent-dark:      var(--accent-dark);
+
+  /* Text */
+  --color-text-primary:   var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted:     var(--text-muted);
+  --color-text-inverse:   var(--text-inverse);
+
+  /* Status */
+  --color-status-success: var(--status-success);
+  --color-status-warning: var(--status-warning);
+  --color-status-error:   var(--status-error);
+  --color-status-info:    var(--status-info);
+
+  /* Shadows (neumorphic elevation grammar) */
+  --shadow-flat:        var(--shadow-flat);
+  --shadow-pressed:     var(--shadow-pressed);
+  --shadow-floating:    var(--shadow-floating);
+  --shadow-elevated:    var(--shadow-elevated);
+  --shadow-accent-glow: var(--shadow-accent-glow);
+
+  /* Typography */
+  --font-family-body:    var(--font-body);
+  --font-family-display: var(--font-display);
+  --font-family-mono:    var(--font-mono);
+
+  /* Border radius */
+  --radius-sm:  var(--radius-sm);
+  --radius-md:  var(--radius-md);
+  --radius-lg:  var(--radius-lg);
+  --radius-xl:  var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-3xl: var(--radius-3xl);
+}
+
+/* Scan UI package source so Tailwind sees component class names */
+@source "../../packages/ui/src/**/*.svelte";
+
+/* Base layer */
+@layer base {
+  html {
+    font-family: var(--font-body);
+    background-color: var(--surface-ground);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

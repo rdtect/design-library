@@ -2,15 +2,6 @@ name = "rdtect-com"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "./build"
 
-[env.production]
-routes = [{ pattern = "rdtect.com/*", zone_id = "" }]
-
-[[d1_databases]]
-binding = "DB"
-database_name = "rdtect-com"
-database_id = ""
-
-[services]
 # ponytail: mail binding configured via CF dashboard; no explicit binding needed here
 # Email Routing set up as: contact@rdtect.com → ar.rickde@zoho.com
-# Form submissions to /api/contact validated via Turnstile, emailed via CF Mail API
+# Form submissions to /api/contact validated via Turnstile, emailed via MailChannels API

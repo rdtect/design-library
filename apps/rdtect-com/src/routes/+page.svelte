@@ -5,7 +5,7 @@
   const capabilities = [
     {
       title: 'Experience Design',
-      body: 'Spatial storytelling, DX strategy, and immersive environments — the experiential layer that makes AV premium.',
+      body: 'Spatial storytelling, DX strategy, and immersive environments — the layer between a room and an experience.',
     },
     {
       title: 'AI Orchestration',
@@ -13,7 +13,7 @@
     },
     {
       title: 'Design Systems',
-      body: 'Token-driven, Svelte 5, production-grade component libraries — architecture that scales without debt.',
+      body: 'Code that behaves like a building — one change propagates consistently to every surface. Token-driven, Svelte 5, zero debt.',
     },
   ]
 </script>
@@ -42,7 +42,7 @@
     I design experiences.
   </p>
   <p class="mt-3 text-lg text-text-muted max-w-xl leading-relaxed">
-    Experiential layer · AI application layer · systems built to last.
+    Experiential layer · AI application layer · systems that outlast the builders.
   </p>
 
   <div class="mt-12 flex gap-4 flex-wrap">

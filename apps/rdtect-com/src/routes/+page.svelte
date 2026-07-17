@@ -1,5 +1,6 @@
 <script lang="ts">
   import { GoldHeading, SurfaceCard, Button } from '@rdtect/ui'
+  import ContactForm from '$lib/components/ContactForm.svelte'
 
   const capabilities = [
     {
@@ -85,6 +86,11 @@
       </SurfaceCard>
     {/each}
   </div>
+</section>
+
+<!-- Contact -->
+<section class="px-8 md:px-16 lg:px-24 py-24">
+  <ContactForm />
 </section>
 
 <!-- Footer -->

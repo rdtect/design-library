@@ -14,7 +14,7 @@
   },
   "files": ["dist/"],
   "scripts": {
-    "build": "svelte-package -i src/lib",
+    "build": "svelte-package -i src/lib && find dist -name '*.test.*' -delete",
     "dev": "svelte-package -i src/lib --watch",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run"

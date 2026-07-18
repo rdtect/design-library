@@ -2,6 +2,8 @@ name = "rdtect-com"
 compatibility_date = "2025-01-01"
 pages_build_output_dir = "./build"
 
+# D1 Database binding for article embeddings (RDT-415)
+# AI binding configured via CF dashboard (not in wrangler.toml for Pages)
 # ponytail: mail binding configured via CF dashboard; no explicit binding needed here
 # Email Routing set up as: contact@rdtect.com → ar.rickde@zoho.com
 # Form submissions to /api/contact validated via Turnstile, emailed via MailChannels API

@@ -46,12 +46,16 @@
   </p>
 
   <div class="mt-12 flex gap-4 flex-wrap">
-    <Button variant="primary" size="lg">
-      View Work
-    </Button>
-    <Button variant="ghost" size="lg">
-      GitHub →
-    </Button>
+    <a href="/work">
+      <Button variant="primary" size="lg">
+        View Work
+      </Button>
+    </a>
+    <a href="https://github.com/rdtect" target="_blank" rel="noopener noreferrer">
+      <Button variant="ghost" size="lg">
+        GitHub →
+      </Button>
+    </a>
   </div>
 </section>
 

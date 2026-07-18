@@ -9,7 +9,16 @@ const config = {
       fallback: undefined,
       precompress: false,
       strict: true
-    })
+    }),
+    prerender: {
+      entries: [
+        '/',
+        '/work',
+        '/work/iff-gbs-hub',
+        '/work/7eleven-bengaluru',
+        '/work/fidelity-bengaluru'
+      ]
+    }
   }
 }
 
